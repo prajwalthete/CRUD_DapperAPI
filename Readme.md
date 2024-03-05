@@ -1,8 +1,8 @@
 # Dapper CRUD Application
 
-This is a CRUD (Create, Read, Update, Delete) application built using Dapper ORM in ASP.NET Core. The application consists of the following projects:
+This is a CRUD (Create, Read, Update, Delete) application built using Dapper ORM in ASP.NET Core. The application consists of the following Layers:
 
-## Projects
+## Project Contain Following Layers
 
 1. **DapperCRUDFinal**: This is the main solution folder.
 2. **BusinessLayer**: Contains business logic and interfaces.
