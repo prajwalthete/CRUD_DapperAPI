@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D66C6184-720B-49F3-8C15-BF86F731FDB7}|RepositoryLayer\\RepositoryLayer.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\crud-linq\\dapper2024demo-3\\dapper_crdu_final\\dappercrudfinal\\repositorylayer\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D66C6184-720B-49F3-8C15-BF86F731FDB7}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A15ECBC4-9368-44E5-BB4B-0252CCBE2DFE}|DapperCRUD\\DapperCRUD.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\crud-linq\\dapper2024demo-3\\dapper_crdu_final\\dappercrudfinal\\dappercrud\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A15ECBC4-9368-44E5-BB4B-0252CCBE2DFE}|DapperCRUD\\DapperCRUD.csproj|solutionrelative:dappercrud\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,77 +43,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Entities\\Employee.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Entities\\Employee.cs",
-              "RelativeToolTip": "RepositoryLayer\\Entities\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T06:23:43.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CompaniesController.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\DapperCRUD\\Controllers\\CompaniesController.cs",
               "RelativeDocumentMoniker": "DapperCRUD\\Controllers\\CompaniesController.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\DapperCRUD\\Controllers\\CompaniesController.cs",
               "RelativeToolTip": "DapperCRUD\\Controllers\\CompaniesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:15:30.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CompanyBL.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\BusinessLayer\\Services\\CompanyBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\CompanyBL.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\BusinessLayer\\Services\\CompanyBL.cs",
               "RelativeToolTip": "BusinessLayer\\Services\\CompanyBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:15:06.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ICompanyBL.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\BusinessLayer\\Interfaces\\ICompanyBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Interfaces\\ICompanyBL.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\BusinessLayer\\Interfaces\\ICompanyBL.cs",
               "RelativeToolTip": "BusinessLayer\\Interfaces\\ICompanyBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:15:04.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "CompanyRL.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Services\\CompanyRL.cs",
               "RelativeDocumentMoniker": "RepositoryLayer\\Services\\CompanyRL.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Services\\CompanyRL.cs",
               "RelativeToolTip": "RepositoryLayer\\Services\\CompanyRL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:14:55.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ICompanyRL.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Interfaces\\ICompanyRL.cs",
               "RelativeDocumentMoniker": "RepositoryLayer\\Interfaces\\ICompanyRL.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Interfaces\\ICompanyRL.cs",
               "RelativeToolTip": "RepositoryLayer\\Interfaces\\ICompanyRL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:14:53.536Z",
               "EditorCaption": ""

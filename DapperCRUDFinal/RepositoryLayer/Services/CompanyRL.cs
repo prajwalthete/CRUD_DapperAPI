@@ -15,7 +15,6 @@ namespace RepositoryLayer.Services
         }
 
 
-
         public async Task<IEnumerable<Company>> GetCompanies()
         {
             var query = "SELECT * FROM Companies";
@@ -26,6 +25,18 @@ namespace RepositoryLayer.Services
                 return companies.ToList();
             }
         }
+
+
+        public async Task<Company> GetCompany(int id)
+        {
+            var query = "SELECT * FROM Companies WHERE Id = @Id";
+            using (var connection = _context.CreateConnection())
+            {
+                var company = await connection.QuerySingleOrDefaultAsync<Company>(query, new { id });
+                return company;
+            }
+        }
+
 
 
     }

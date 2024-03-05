@@ -19,6 +19,12 @@ namespace BusinessLayer.Services
             return _companyRL.GetCompanies();
         }
 
+        public Task<Company> GetCompany(int id)
+        {
+            return _companyRL.GetCompany(id);
+        }
+
+
 
     }
 }

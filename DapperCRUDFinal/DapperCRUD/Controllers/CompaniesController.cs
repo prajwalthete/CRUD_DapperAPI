@@ -30,6 +30,24 @@ namespace DapperCRUD.Controllers
         }
 
 
+        [HttpGet("{id}", Name = "CompanyById")]
+        public async Task<IActionResult> GetCompany(int id)
+        {
+            try
+            {
+                var company = await _company.GetCompany(id);
+                if (company == null) return BadRequest("Company with Given Id NOT exists");
+                return Ok(company);
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+
 
 
     }
