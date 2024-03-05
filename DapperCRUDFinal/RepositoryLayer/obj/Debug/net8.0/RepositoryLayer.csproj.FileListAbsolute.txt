@@ -1,0 +1,16 @@
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.deps.json
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.pdb
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.AssemblyReference.cache
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\bin\Debug\net8.0\ModelLayer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\bin\Debug\net8.0\ModelLayer.pdb
+E:\.NET WORKSPACE-1\Websites1\2023\2024\CRUD-LINQ\DAPPER2024DEMO-3\DAPPER_CRDU_Final\DapperCRUDFinal\RepositoryLayer\obj\Debug\net8.0\Reposito.A0A61804.Up2Date

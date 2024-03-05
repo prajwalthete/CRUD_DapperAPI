@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "DapperCRUD.Controllers.CompaniesController",
+    "Method": "GetCompanies",
+    "RelativePath": "api/Companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
