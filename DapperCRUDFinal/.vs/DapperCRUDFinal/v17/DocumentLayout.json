@@ -62,8 +62,7 @@
               "RelativeToolTip": "RepositoryLayer\\Interfaces\\ICompanyRL.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T07:00:45.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T07:00:45.813Z"
             },
             {
               "$type": "Document",
@@ -73,7 +72,7 @@
               "RelativeDocumentMoniker": "RepositoryLayer\\Services\\CompanyRL.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\CRUD-LINQ\\DAPPER2024DEMO-3\\DAPPER_CRDU_Final\\DapperCRUDFinal\\RepositoryLayer\\Services\\CompanyRL.cs",
               "RelativeToolTip": "RepositoryLayer\\Services\\CompanyRL.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAvwCYAAAANAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwCYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T06:14:55.777Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "BusinessLayer\\Interfaces\\ICompanyBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T06:15:04.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T06:15:04.562Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "BusinessLayer\\Services\\CompanyBL.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAA6wCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T06:15:06.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T06:15:06.098Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "DapperCRUD\\Controllers\\CompaniesController.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAIwDsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T06:15:30.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T06:15:30.129Z"
             },
             {
               "$type": "Document",
