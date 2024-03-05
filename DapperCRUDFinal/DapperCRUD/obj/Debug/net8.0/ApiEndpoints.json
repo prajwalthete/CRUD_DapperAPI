@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "DapperCRUD.Controllers.CompaniesController",
+    "Method": "CreateCompany",
+    "RelativePath": "api/Companies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "ModelLayer.Dto.CompanyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DapperCRUD.Controllers.CompaniesController",
     "Method": "GetCompany",
     "RelativePath": "api/Companies/{id}",
     "HttpMethod": "GET",

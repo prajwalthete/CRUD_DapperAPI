@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interfaces;
+using ModelLayer.Dto;
 using RepositoryLayer.Entities;
 using RepositoryLayer.Interfaces;
 
@@ -22,6 +23,11 @@ namespace BusinessLayer.Services
         public Task<Company> GetCompany(int id)
         {
             return _companyRL.GetCompany(id);
+        }
+
+        public Task<Company> CreateCompany(CompanyDto companyDto)
+        {
+            return _companyRL.CreateCompany(companyDto);
         }
 
 

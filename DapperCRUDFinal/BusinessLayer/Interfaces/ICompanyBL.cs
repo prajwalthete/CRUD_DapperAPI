@@ -1,4 +1,5 @@
-﻿using RepositoryLayer.Entities;
+﻿using ModelLayer.Dto;
+using RepositoryLayer.Entities;
 
 namespace BusinessLayer.Interfaces
 {
@@ -6,6 +7,9 @@ namespace BusinessLayer.Interfaces
     {
         public Task<IEnumerable<Company>> GetCompanies();
         public Task<Company> GetCompany(int id);
+        public Task<Company> CreateCompany(CompanyDto companyDto);
+
+
 
     }
 }

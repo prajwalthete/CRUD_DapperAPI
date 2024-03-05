@@ -1,7 +1,9 @@
 ﻿using Dapper;
 using DapperASP.NETCore.Context;
+using ModelLayer.Dto;
 using RepositoryLayer.Entities;
 using RepositoryLayer.Interfaces;
+using System.Data;
 
 namespace RepositoryLayer.Services
 {
@@ -38,6 +40,35 @@ namespace RepositoryLayer.Services
         }
 
 
+        public async Task<Company> CreateCompany(CompanyDto companyDto)
+        {
+            var query = "INSERT INTO Companies " +
+                             "(Name, Address, Country)" +
+                             " VALUES (@Name, @Address, @Country)" +
+                             "SELECT CAST(SCOPE_IDENTITY() as int)";
 
+            var parameters = new DynamicParameters();
+            parameters.Add("Name", companyDto.Name, DbType.String);
+            parameters.Add("Address", companyDto.Address, DbType.String);
+            parameters.Add("Country", companyDto.Country, DbType.String);
+
+            using (var connection = _context.CreateConnection())
+            {
+                var id = await connection.QuerySingleAsync<int>(query, parameters);
+                var createdCompany = new Company
+                {
+                    Id = id,
+                    Name = companyDto.Name,
+                    Address = companyDto.Address,
+                    Country = companyDto.Country
+                };
+                return createdCompany;
+            }
+
+        }
     }
+
+
+
 }
+

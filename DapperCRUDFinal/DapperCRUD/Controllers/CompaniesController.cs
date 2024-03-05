@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using ModelLayer.Dto;
 
 namespace DapperCRUD.Controllers
 {
@@ -14,6 +15,7 @@ namespace DapperCRUD.Controllers
             _company = company;
         }
 
+
         [HttpGet]
         public async Task<IActionResult> GetCompanies()
         {
@@ -24,7 +26,7 @@ namespace DapperCRUD.Controllers
             }
             catch (Exception ex)
             {
-                //log error
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -48,7 +50,21 @@ namespace DapperCRUD.Controllers
         }
 
 
+        [HttpPost]
+        public async Task<IActionResult> CreateCompany(CompanyDto company)
+        {
+            try
+            {
+                var createdCompany = await _company.CreateCompany(company);
+                return CreatedAtRoute("CompanyById", new { id = createdCompany.Id }, createdCompany);
+            }
+            catch (Exception ex)
+            {
 
-
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }
+
+
