@@ -40,5 +40,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DapperCRUD.Controllers.CompaniesController",
+    "Method": "UpdateCompany",
+    "RelativePath": "api/Companies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "companyForUpdateDto",
+        "Type": "ModelLayer.Dto.CompanyForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -64,6 +64,28 @@ namespace DapperCRUD.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCompany(int id, CompanyForUpdateDto companyForUpdateDto)
+        {
+            try
+            {
+                var dbComapny = await _company.GetCompany(id);
+                if (dbComapny == null)
+                    return NotFound();
+
+                await _company.UpdateCompany(id, companyForUpdateDto);
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+
     }
 }
 

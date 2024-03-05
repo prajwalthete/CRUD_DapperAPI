@@ -30,7 +30,10 @@ namespace BusinessLayer.Services
             return _companyRL.CreateCompany(companyDto);
         }
 
+        public Task UpdateCompany(int id, CompanyForUpdateDto company)
+        {
+            return _companyRL.UpdateCompany(id, company);
 
-
+        }
     }
 }

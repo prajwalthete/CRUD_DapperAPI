@@ -66,6 +66,23 @@ namespace RepositoryLayer.Services
             }
 
         }
+
+        public async Task UpdateCompany(int id, CompanyForUpdateDto company)
+        {
+            var query = "UPDATE Companies SET Name = @Name, Address = @Address, Country = @Country WHERE Id = @Id";
+
+            var parameters = new DynamicParameters();
+
+            parameters.Add("Id", id, DbType.Int32);
+            parameters.Add("Name", company.Name, DbType.String);
+            parameters.Add("Address", company.Address, DbType.String);
+            parameters.Add("Country", company.Country, DbType.String);
+
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query, parameters);
+            }
+        }
     }
 
 
