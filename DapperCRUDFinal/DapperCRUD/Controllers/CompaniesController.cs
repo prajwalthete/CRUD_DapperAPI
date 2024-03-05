@@ -85,6 +85,26 @@ namespace DapperCRUD.Controllers
             }
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCompany(int id)
+        {
+            try
+            {
+                var DbCompany = await _company.GetCompany(id);
+                if (DbCompany == null)
+                    return NotFound();
+
+                await _company.DeleteCompany(id);
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
+
+        }
 
     }
 }

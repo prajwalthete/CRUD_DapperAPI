@@ -35,5 +35,10 @@ namespace BusinessLayer.Services
             return _companyRL.UpdateCompany(id, company);
 
         }
+
+        public Task DeleteCompany(int id)
+        {
+            return _companyRL.DeleteCompany(id);
+        }
     }
 }

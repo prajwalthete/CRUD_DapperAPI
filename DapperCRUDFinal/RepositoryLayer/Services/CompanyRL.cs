@@ -54,7 +54,7 @@ namespace RepositoryLayer.Services
 
             using (var connection = _context.CreateConnection())
             {
-                var id = await connection.QuerySingleAsync<int>(query, parameters);
+                var id = await connection.ExecuteScalarAsync<int>(query, parameters);
                 var createdCompany = new Company
                 {
                     Id = id,
@@ -81,6 +81,16 @@ namespace RepositoryLayer.Services
             using (var connection = _context.CreateConnection())
             {
                 await connection.ExecuteAsync(query, parameters);
+            }
+        }
+
+        public async Task DeleteCompany(int id)
+        {
+            var query = """ DELETE FROM Companies WHERE Id=@Id""";
+
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query, new { id });
             }
         }
     }

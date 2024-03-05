@@ -10,7 +10,7 @@ namespace RepositoryLayer.Interfaces
         public Task<Company> GetCompany(int id);
         public Task<Company> CreateCompany(CompanyDto companyDto);
         public Task UpdateCompany(int id, CompanyForUpdateDto company);
-
+        public Task DeleteCompany(int id);
 
     }
 }
