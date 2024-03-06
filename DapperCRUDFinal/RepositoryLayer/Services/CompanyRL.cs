@@ -42,6 +42,56 @@ namespace RepositoryLayer.Services
 
         public async Task<Company> CreateCompany(CompanyDto companyDto)
         {
+            using (var connection = _context.CreateConnection())
+            {
+                // Check if table exists
+                bool tableExists = await connection.QueryFirstOrDefaultAsync<bool>(
+                    """ 
+                    SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Companies'
+                    """
+                    );
+
+
+                if (!tableExists)
+                {
+                    // Create table if it doesn't exist
+                    await connection.ExecuteAsync("""
+
+                                        CREATE TABLE Companies (
+                                            Id INT IDENTITY(1, 1) PRIMARY KEY,
+                                            Name NVARCHAR(100) NOT NULL,
+                                            Address NVARCHAR(100) NOT NULL,
+                                            Country NVARCHAR(100) NOT NULL
+                                        )
+                        """);
+                }
+
+                var query = @"INSERT INTO Companies (Name, Address, Country) VALUES (@Name, @Address, @Country);
+                        SELECT CAST(SCOPE_IDENTITY() as int)";
+
+                var parameters = new DynamicParameters();
+                parameters.Add("Name", companyDto.Name, DbType.String);
+                parameters.Add("Address", companyDto.Address, DbType.String);
+                parameters.Add("Country", companyDto.Country, DbType.String);
+
+                var id = await connection.ExecuteScalarAsync<int>(query, parameters);
+
+                var createdCompany = new Company
+                {
+                    Id = id,
+                    Name = companyDto.Name,
+                    Address = companyDto.Address,
+                    Country = companyDto.Country
+                };
+
+                return createdCompany;
+            }
+        }
+
+
+        /*
+        public async Task<Company> CreateCompany(CompanyDto companyDto)
+        {
             var query = "INSERT INTO Companies " +
                              "(Name, Address, Country)" +
                              " VALUES (@Name, @Address, @Country)" +
@@ -66,7 +116,7 @@ namespace RepositoryLayer.Services
             }
 
         }
-
+        */
         public async Task UpdateCompany(int id, CompanyForUpdateDto company)
         {
             var query = "UPDATE Companies SET Name = @Name, Address = @Address, Country = @Country WHERE Id = @Id";

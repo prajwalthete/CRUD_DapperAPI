@@ -58,3 +58,7 @@ INSERT [dbo].[Employees] ([Id], [Name], [Age], [Position], [CompanyId]) VALUES
 (2, N'Kane Miller', 35, N'Administrator', 2),
 (3, N'Jana McLeaf', 30, N'Software developer', 1)
 SET IDENTITY_INSERT [dbo].[Employees] OFF
+
+
+   DROP TABLE [dbo].[Employees]
+    DROP TABLE [dbo].[Companies]

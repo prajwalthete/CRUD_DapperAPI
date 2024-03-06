@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Dto;
+using ModelLayer.Resposes;
+using RepositoryLayer.Entities;
 
 namespace DapperCRUD.Controllers
 {
@@ -15,7 +17,7 @@ namespace DapperCRUD.Controllers
             _company = company;
         }
 
-
+        /*
         [HttpGet]
         public async Task<IActionResult> GetCompanies()
         {
@@ -30,6 +32,36 @@ namespace DapperCRUD.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        */
+
+        [HttpGet]
+        public async Task<ActionResult<CreateCompanyResponse<List<Company>>>> GetCompanies()
+        {
+            try
+            {
+                var companies = await _company.GetCompanies();
+                var response = new CreateCompanyResponse<List<Company>>
+                {
+                    Message = "Companies retrieved successfully",
+                    StatusCode = 200, // OK
+                    Data = companies.ToList() // Assign the list of companies to the Data property
+                };
+                return response;
+            }
+            catch (Exception ex)
+            {
+                var response = new CreateCompanyResponse<List<Company>>
+                {
+                    IsSuccess = false,
+                    Message = ex.Message,
+                    StatusCode = 404 // Internal Server Error
+                };
+                return response;
+            }
+        }
+
+
+
 
 
         [HttpGet("{id}", Name = "CompanyById")]
