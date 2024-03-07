@@ -35,18 +35,22 @@ namespace DapperCRUD.Controllers
         */
 
         [HttpGet]
-        public async Task<ActionResult<CreateCompanyResponse<List<Company>>>> GetCompanies()
+        // public async Task<ActionResult<CreateCompanyResponse<List<Company>>>> GetCompanies()
+        public async Task<IActionResult> GetCompanies()
         {
             try
             {
                 var companies = await _company.GetCompanies();
+
                 var response = new CreateCompanyResponse<List<Company>>
                 {
                     Message = "Companies retrieved successfully",
                     StatusCode = 200, // OK
                     Data = companies.ToList() // Assign the list of companies to the Data property
                 };
-                return response;
+
+                return Ok(response);
+
             }
             catch (Exception ex)
             {
@@ -56,12 +60,9 @@ namespace DapperCRUD.Controllers
                     Message = ex.Message,
                     StatusCode = 404 // Internal Server Error
                 };
-                return response;
+                return StatusCode(500, response);
             }
         }
-
-
-
 
 
         [HttpGet("{id}", Name = "CompanyById")]
@@ -70,8 +71,34 @@ namespace DapperCRUD.Controllers
             try
             {
                 var company = await _company.GetCompany(id);
-                if (company == null) return BadRequest("Company with Given Id NOT exists");
-                return Ok(company);
+
+                if (company == null)
+                {
+                    var response = new CreateCompanyResponse<Company>
+                    {
+
+                        IsSuccess = false,
+                        Message = "Compnay with Given Id Does not exists",
+                        StatusCode = 400,
+
+                    };
+                    return BadRequest(response);
+
+                }
+                {
+
+                    var response = new CreateCompanyResponse<Company>
+                    {
+
+                        Message = "Company retrieved successfully",
+                        StatusCode = 200,
+                        Data = company
+                    };
+
+                    return Ok(response);
+                }
+
+
 
             }
             catch (Exception ex)
@@ -88,7 +115,15 @@ namespace DapperCRUD.Controllers
             try
             {
                 var createdCompany = await _company.CreateCompany(company);
-                return CreatedAtRoute("CompanyById", new { id = createdCompany.Id }, createdCompany);
+                var response = new CreateCompanyResponse<Company>
+                {
+
+                    Message = "Company retrieved successfully",
+                    StatusCode = 200,
+                    Data = createdCompany
+                };
+
+                return CreatedAtRoute("CompanyById", new { id = createdCompany.Id }, response);
             }
             catch (Exception ex)
             {
@@ -107,7 +142,15 @@ namespace DapperCRUD.Controllers
                     return NotFound();
 
                 await _company.UpdateCompany(id, companyForUpdateDto);
-                return NoContent();
+
+                var response = new CreateCompanyResponse<Company>
+                {
+
+                    Message = "Company Updated successfully",
+                    StatusCode = 200,
+                    // Data = dbComapny
+                };
+                return Ok(response);
 
             }
             catch (Exception ex)
